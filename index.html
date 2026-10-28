@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>👑Blush Floral Wedding Card</title>
+
+</head>
+
+<body class="min-h-screen bg-rose-50 px-3 py-8 font-poppins text-rose-950">
+
+  <section id="invitationCover" class="floral-bg mx-auto flex min-h-[75vh] max-w-xl items-center justify-center rounded-3xl border border-rose-200 p-4 text-center shadow-2xl sm:p-7" aria-label="Wedding invitation cover">
+    <div class="cover-content w-full rounded-2xl border border-amber-700/40 bg-[#fff9f2]/85 px-5 py-12 backdrop-blur-sm sm:px-7">
+      <p class="text-[10px] tracking-[.25em] text-rose-800">A WEDDING INVITATION</p>
+      <p class="mt-8 font-script text-6xl text-rose-700 sm:text-7xl">
+        Hira <span class="font-elegant text-3xl">&amp;</span> Roman
+      </p>
+      <div class="my-5 flex items-center justify-center gap-3 text-rose-600" aria-hidden="true">
+        <span class="h-px w-16 bg-rose-300"></span>
+        <span class="text-2xl">♡</span>
+        <span class="h-px w-16 bg-rose-300"></span>
+      </div>
+      <p class="font-elegant text-xl italic text-rose-800">Together with their families</p>
+      <button
+        id="openInvitation"
+        type="button"
+        aria-controls="invitationCard"
+        aria-expanded="false"
+        class="mt-9 rounded-full bg-gradient-to-r from-rose-500 to-rose-800 px-8 py-3 text-sm tracking-widest text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2"
+      >
+        OPEN INVITATION
+      </button>
+    </div>
+  </section>
+
+  <main id="invitationCard" class="card mx-auto max-w-xl rounded-3xl bg-white/70 p-3" tabindex="-1" hidden>
+
+    <section class="floral-bg relative overflow-hidden rounded-2xl border border-rose-200 p-4 sm:p-7">
+
+      <div class="invitation-content rounded-2xl border border-amber-700/40 bg-[#fff9f2]/85 px-4 py-10 text-center backdrop-blur-sm sm:px-7">
+
+        <p class="mx-auto mb-4 inline-block rounded-full border border-amber-700/30 bg-white/70 px-4 py-1 text-[10px] font-medium tracking-[.25em] text-rose-800">
+          YOU'RE INVITED
+        </p>
+
+        <p class="text-[10px] tracking-[.25em] text-rose-800">
+          TOGETHER WITH THEIR FAMILIES
+        </p>
+
+        <p class="mt-6 font-elegant text-lg italic text-rose-900">
+          With the blessings of our families, we request the pleasure of your company at the wedding of
+        </p>
+
+        <h1 class="mt-4 font-script text-6xl text-rose-700 sm:text-7xl">
+          Hira <span class="font-elegant text-3xl">&</span> Roman
+        </h1>
+
+        <div class="my-5 flex items-center justify-center gap-3 text-rose-600">
+          <span class="h-px w-16 bg-rose-300"></span>
+          <span class="animate-pulse text-2xl">♡</span>
+          <span class="h-px w-16 bg-rose-300"></span>
+        </div>
+
+        <p class="font-elegant text-xl italic text-rose-800">
+          Two hearts, one beautiful forever
+        </p>
+
+        <div class="mx-auto mt-5 max-w-sm rounded-2xl border border-rose-200 bg-rose-50/80 px-4 py-4">
+          <p class="text-xs font-medium tracking-[.2em] text-rose-700">
+            ✨ LET'S CELEBRATE LOVE ✨
+          </p>
+          <p class="mt-2 font-elegant text-lg italic text-rose-800">
+            Join us for an evening of joy, laughter, and beautiful memories.
+          </p>
+        </div>
+
+        <!-- Countdown timer -->
+        <div class="mt-8 rounded-2xl border border-rose-200 bg-white/80 px-2 py-5 shadow-sm">
+
+          <p class="mb-4 text-[10px] font-medium tracking-widest text-rose-800">
+            COUNTING DOWN TO OUR BIG DAY
+          </p>
+
+          <div class="flex justify-center gap-2 sm:gap-4">
+            <div class="flex-1">
+              <strong id="months" class="block font-elegant text-3xl text-rose-800">02</strong>
+              <span class="text-[9px]">Months</span>
+            </div>
+
+            <div class="flex-1">
+              <strong id="days" class="block font-elegant text-3xl text-rose-800">00</strong>
+              <span class="text-[9px]">Days</span>
+            </div>
+
+            <div class="flex-1">
+              <strong id="hours" class="block font-elegant text-3xl text-rose-800">00</strong>
+              <span class="text-[9px]">Hours</span>
+            </div>
+
+            <div class="flex-1">
+              <strong id="minutes" class="block font-elegant text-3xl text-rose-800">00</strong>
+              <span class="text-[9px]">Minutes</span>
+            </div>
+
+            <div class="flex-1">
+              <strong id="seconds" class="block font-elegant text-3xl text-rose-800">00</strong>
+              <span class="text-[9px]">Seconds</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wedding details -->
+        <div class="mx-auto mt-7 grid max-w-sm gap-5 rounded-2xl border border-rose-100 bg-white/60 p-5 text-left">
+
+          <div class="flex items-center gap-4">
+            <span class="text-2xl text-rose-700">♡</span>
+            <div>
+              <p class="text-[10px] tracking-widest text-rose-700">THE DATE</p>
+              <p class="font-elegant text-xl font-semibold">Sunday, 27 December 2026</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <span class="text-2xl text-rose-700">✧</span>
+            <div>
+              <p class="text-[10px] tracking-widest text-rose-700">THE TIME</p>
+              <p class="font-elegant text-xl font-semibold">8:00 PM</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <span class="text-2xl text-rose-700">⌖</span>
+            <div>
+              <p class="text-[10px] tracking-widest text-rose-700">THE VENUE</p>
+              <p class="font-elegant text-xl font-semibold">The Blossom Marquee</p>
+              <p class="text-xs text-rose-800">Clifton, Karachi</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Venue location -->
+        <div class="mt-8">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=The+Blossom+Marquee%2C+Clifton%2C+Karachi"
+            target="_blank"
+            rel="noopener"
+            class="inline-block rounded-full bg-gradient-to-r from-rose-500 to-rose-800 px-8 py-3 text-sm tracking-widest text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
+          >
+            Location
+          </a>
+        </div>
+
+        <p class="mt-5 text-xs tracking-widest text-rose-700">
+          FOR DETAILS:
+          <a href="tel:+923001234567" class="font-medium underline underline-offset-2">
+            +92 300 1234567
+          </a>
+        </p>
+
+        <p class="mt-6 font-elegant text-lg italic text-rose-800">
+          Your presence will make our day complete
+        </p>
+        <p class="mt-2 text-[10px] tracking-widest text-rose-700">
+          WITH LOVE, HIRA &amp; ROMAN
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-5 text-center text-xs text-rose-800" hidden>
+    Made with ♥ for a beautiful beginning
+    <p class="mt-1">Created by Faryal Razzaq</p>
+  </footer>
+
+  <script>
+    // Wedding date: 27 December 2026, 8 PM
+    const weddingDate = new Date(
+      "December 27, 2026 20:00:00"
+    ).getTime();
+
+    function updateTimer() {
+      const now = Date.now();
+      let remaining = weddingDate - now;
+
+      if (remaining <= 0) {
+        document.querySelector(".card h1").textContent =
+          "It's Our Wedding Day!";
+
+        ["months", "days", "hours", "minutes", "seconds"]
+          .forEach(id => {
+            document.getElementById(id).textContent = "00";
+          });
+
+        return;
+      }
+
+      const current = new Date(now);
+      const target = new Date(weddingDate);
+
+      let months =
+        (target.getFullYear() - current.getFullYear()) * 12 +
+        target.getMonth() - current.getMonth();
+
+      const anchor = new Date(current);
+      anchor.setMonth(anchor.getMonth() + months);
+
+      if (anchor > target) months--;
+
+      const monthDate = new Date(current);
+      monthDate.setMonth(monthDate.getMonth() + months);
+
+      remaining = weddingDate - monthDate.getTime();
+
+      const days = Math.floor(remaining / 86400000);
+      remaining %= 86400000;
+
+      const hours = Math.floor(remaining / 3600000);
+      remaining %= 3600000;
+
+      const minutes = Math.floor(remaining / 60000);
+      const seconds = Math.floor((remaining % 60000) / 1000);
+
+      const pad = n => String(n).padStart(2, "0");
+
+      document.getElementById("months").textContent = pad(months);
+      document.getElementById("days").textContent = pad(days);
+      document.getElementById("hours").textContent = pad(hours);
+      document.getElementById("minutes").textContent = pad(minutes);
+      document.getElementById("seconds").textContent = pad(seconds);
+    }
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
+
+    function celebrate() {
+      const colors = ["#e11d48", "#f59e0b", "#fb7185", "#a855f7", "#34d399"];
+      const pieces = [];
+
+      for (let i = 0; i < 45; i++) {
+        const piece = document.createElement("span");
+        piece.className = "confetti";
+        piece.setAttribute("aria-hidden", "true");
+        piece.style.left = `${Math.random() * 100}vw`;
+        piece.style.backgroundColor = colors[i % colors.length];
+        piece.style.setProperty("--drift", `${Math.random() * 160 - 80}px`);
+        piece.style.animationDelay = `${Math.random() * 0.6}s`;
+        pieces.push(piece);
+        document.body.appendChild(piece);
+      }
+
+      window.setTimeout(() => pieces.forEach(piece => piece.remove()), 4000);
+    }
+
+    document.getElementById("openInvitation").addEventListener("click", () => {
+      document.getElementById("invitationCover").hidden = true;
+      document.getElementById("invitationCard").hidden = false;
+      document.querySelector("footer").hidden = false;
+      document.getElementById("openInvitation").setAttribute("aria-expanded", "true");
+      document.getElementById("invitationCard").focus();
+      celebrate();
+    });
+  </script>
+
+</body>
+</html>
