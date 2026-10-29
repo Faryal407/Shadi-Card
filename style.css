@@ -1,7 +1,5 @@
 body , .floral-bg {
-      background-image:
-        linear-gradient(rgba(255, 247, 243, .28),
-                        rgba(255, 247, 243, .28)),
+      background-image: linear-gradient(rgba(255, 247, 243, .28), rgba(255, 247, 243, .28)),
         url("./image/background.jpg");
       background-position: center;
       background-size: cover;
@@ -17,11 +15,11 @@ body , .floral-bg {
     }
 
     .card {
-      animation: appear 1s ease both;
+      animation: card 1s ease both;
     }
 
     .invitation-content > * {
-      animation: reveal-up 650ms cubic-bezier(.2, .75, .25, 1) both;
+      animation: invitation-up 650ms cubic-bezier(.2, .75, .25, 1) both;
     }
 
     .invitation-content > :nth-child(2) { animation-delay: 80ms; }
@@ -37,17 +35,17 @@ body , .floral-bg {
     .invitation-content > :nth-child(12) { animation-delay: 880ms; }
     .invitation-content > :nth-child(13) { animation-delay: 960ms; }
 
-    .confetti {
+    .celebrate {
       position: fixed;
       top: -12px;
       z-index: 50;
       width: 9px;
       height: 14px;
       pointer-events: none;
-      animation: confetti-fall 3s ease-in forwards;
+      animation: celebrate-fall 3s ease-in forwards;
     }
 
-    @keyframes confetti-fall {
+    @keyframes celebrate-fall {
       to {
         transform: translate3d(var(--drift), 105vh, 0) rotate(720deg);
         opacity: 0;
@@ -58,7 +56,7 @@ body , .floral-bg {
       .cover-content,
       .card,
       .invitation-content > *,
-      .confetti {
+      .celebrate {
         animation: none;
       }
     }
@@ -74,7 +72,7 @@ body , .floral-bg {
       }
     }
 
-    @keyframes reveal-up {
+    @keyframes  invitation-up {
       from {
         opacity: 0;
         transform: translateY(14px);
@@ -85,7 +83,7 @@ body , .floral-bg {
       }
     }
 
-    @keyframes appear {
+    @keyframes card {
       from {
         opacity: 0;
         transform: translateY(25px);

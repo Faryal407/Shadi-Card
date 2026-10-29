@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://cdn.tailwindcss.com"></script>
-   <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/x-icon" href="./image/icon.png">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <title>👑Blush Floral Wedding Card</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Blush Floral Wedding Card</title>
 
 </head>
 
@@ -25,13 +26,8 @@
         <span class="h-px w-16 bg-rose-300"></span>
       </div>
       <p class="font-elegant text-xl italic text-rose-800">Together with their families</p>
-      <button
-        id="openInvitation"
-        type="button"
-        aria-controls="invitationCard"
-        aria-expanded="false"
-        class="mt-9 rounded-full bg-gradient-to-r from-rose-500 to-rose-800 px-8 py-3 text-sm tracking-widest text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2"
-      >
+      <button id="openInvitation" type="button"  aria-controls="invitationCard" aria-expanded="false"
+        class="mt-9 rounded-full bg-gradient-to-r from-rose-500 to-rose-800 px-8 py-3 text-sm tracking-widest text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2" >
         OPEN INVITATION
       </button>
     </div>
@@ -145,12 +141,8 @@
 
         <!-- Venue location -->
         <div class="mt-8">
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=The+Blossom+Marquee%2C+Clifton%2C+Karachi"
-            target="_blank"
-            rel="noopener"
-            class="inline-block rounded-full bg-gradient-to-r from-rose-500 to-rose-800 px-8 py-3 text-sm tracking-widest text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
-          >
+          <a href="https://www.google.com/maps/search/?api=1&query=The+Blossom+Marquee%2C+Clifton%2C+Karachi" target="_blank" rel="noopener"
+            class="inline-block rounded-full bg-gradient-to-r from-rose-500 to-rose-800 px-8 py-3 text-sm tracking-widest text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl">
             Location
           </a>
         </div>
@@ -179,7 +171,9 @@
   </footer>
 
   <script>
+
     // Wedding date: 27 December 2026, 8 PM
+    
     const weddingDate = new Date(
       "December 27, 2026 20:00:00"
     ).getTime();
@@ -238,13 +232,15 @@
     updateTimer();
     setInterval(updateTimer, 1000);
 
+
+//celebration
     function celebrate() {
       const colors = ["#e11d48", "#f59e0b", "#fb7185", "#a855f7", "#34d399"];
       const pieces = [];
 
       for (let i = 0; i < 45; i++) {
         const piece = document.createElement("span");
-        piece.className = "confetti";
+        piece.className = "celebrate";
         piece.setAttribute("aria-hidden", "true");
         piece.style.left = `${Math.random() * 100}vw`;
         piece.style.backgroundColor = colors[i % colors.length];
